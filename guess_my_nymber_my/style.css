@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Nosifer&family=Press+Start+2P&display=swap');
+/* i am new to font, have to learn more */
+/* problem i face we without internet i cant load font */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    /* learn about it  */
+}
+
+.icon {
+    font-size: 40px;
+}
+
+button {
+    /* to remove default button desing */
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    font: inherit;
+    border-radius: 0;
+    appearance: none;
+    /* // Just in case we missed anything. */
+}
+
+button:hover {
+    transform: scale(1.07);
+}
+
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    /* for absulate height  , Default Behavior (content-box):*/
+    margin: 0;
+    padding: 50px;
+
+    background-color: darkslategray;
+    color: white;
+
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.again {
+    background-color: white;
+    color: black;
+    padding: 15px;
+}
+
+/* .button-again {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-again:after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+.button-again:hover:after {
+    top: 0px;
+    left: 0px;
+}
+
+@media (min-width: 768px) {
+    .button-again {
+        padding: 13px 50px 13px;
+    }
+} */
+
+.range {
+    /* background-color: #68689963; */
+}
+
+.range.invalidInput {
+    animation: VibrateAndGLow 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes VibrateAndGLow {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+.title {
+    text-align: center;
+    font-size: 80px;
+
+    font-family: "Nosifer", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.result {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+    background-color: white;
+    color: black;
+
+    margin: 10px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    font-size: 60px;
+    font-family: "Irish Grover", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.buttom-container {
+    width: 55%;
+    margin: auto auto;
+}
+
+.buttom-sub-container {
+    display: flex;
+    /* justify-content: ; */
+    /* gap: 100px; */
+}
+
+.input-guess {
+    width: 200px;
+    height: 60px;
+
+    border: 5px solid white;
+    font-size: 40px;
+
+
+}
+
+.btn-guess {
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    margin-inline: auto;
+    padding: 20px;
+    background-color: white;
+
+    display: block;
+
+}
+
+.result-container {
+    width: 310px;
+    /* border: 1px solid #ccc; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

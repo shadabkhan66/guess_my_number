@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+
+        <header class="top">
+            <button class="again" onclick="againReset()" id="again">Try Again!</button>
+            <!-- confused if i should use an div and give functionality and desing or use button-->
+            <!-- and why role? is given -->
+            <div class="range">&lt;&nbsp;Gusss the number 1-20 &gt;</div>
+        </header>
+        <main>
+
+            <div>
+                <div class="title">Guess The Number!</div>
+            </div>
+            <div class="guessed-number-container">
+                <div class="result" id="result">?</div>
+                <div class="line"></div>
+            </div>
+            <div class="buttom-container">
+                <div class="buttom-sub-container">
+                    <div>
+                        <input type="number" autofocus required name="guess" class="input-guess" id="input-guess-id">
+                        <!-- so autofocus is working but not required -->
+                        <!-- how to remove number up and down symbo along with number input -->
+                        <button onclick="checkClick()" class="btn-guess">Check!</button>
+                    </div>
+                    <hr>
+                    <!-- how to place vertival line in midel of horizental axis and edjust other item around it  -->
+                    <div class="result-container">
+                        <div id="instructions">Start guessing</div>
+                        <div class="score-bord">
+
+                            <div><span class="icon">💯</span> Score: <span class="current-score"></span></div>
+                            <div><span class="icon">🎖️</span> Highestscore:<span class="highest-score"></span></div>
+                            <!-- can we place score and highest score in same level  
+                          mening the number sould start form same x postion  after colon -->
+
+                            <!-- anoter problem is item we not aligned properly like icon looks slighly above text after icon -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
+
+
+<!-- is there ways to self validation and finding bugs instid of giving to
+  and AI to find for an answer i want to be depended on myshelf -->
+
+<!-- later add name and store there scores or play as guest-->
